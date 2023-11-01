@@ -1,5 +1,6 @@
 package org.example.yandex.academy.permutations_3_1_a;
 
+import org.example.yandex.academy.algo_design_techniques.permutations_3_1_a.Task_3_1_A;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

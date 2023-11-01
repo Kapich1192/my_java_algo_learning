@@ -1,4 +1,4 @@
-package org.example.yandex.academy.permutations_3_1_a;
+package org.example.yandex.academy.algo_design_techniques.permutations_3_1_a;
 
 import java.util.Scanner;
 
