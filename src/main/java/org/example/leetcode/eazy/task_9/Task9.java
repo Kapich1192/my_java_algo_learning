@@ -39,30 +39,30 @@ public class Task9 {
             sym++;
             temp /= 10;
         } while (temp >= 1);
-        if(x < 0) {
+        if (x < 0) {
             return false;
-        } else if(sym == 1) {
+        } else if (sym == 1) {
             return true;
         } else if (sym % 2 == 0) {
             pivot = sym / 2;
-            right = x / (int)Math.pow(10, pivot);
-            left = x % (int)Math.pow(10, pivot);
+            right = x / (int) Math.pow(10, pivot);
+            left = x % (int) Math.pow(10, pivot);
             temp = 0;
             while (right >= 1) {
                 temp += right % 10;
                 right /= 10;
-                if(right >= 1) temp *= 10;
+                if (right >= 1) temp *= 10;
             }
             return left == temp;
         } else {
             pivot = (int) Math.floor(sym / 2.0);
-            right = x / (int)Math.pow(10, pivot + 1);
-            left = x % (int)Math.pow(10, pivot);
+            right = x / (int) Math.pow(10, pivot + 1);
+            left = x % (int) Math.pow(10, pivot);
             temp = 0;
             while (right >= 1) {
                 temp += right % 10;
                 right /= 10;
-                if(right >= 1) temp *= 10;
+                if (right >= 1) temp *= 10;
             }
             return left == temp;
         }
